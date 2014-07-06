@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'verdana', sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 8px #fff;
+}
+#canvas {
+  height: 255%;
+  width: 100%;
+  background: #fff;
+  &.saved {
+    .tooltip.save {
+      span {
+        display: none;
+        &.saved {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+.tooltip {
+  position: fixed;
+  &.red {
+    right: 1em;
+    top: 50%;
+    margin-top: -4em;
+    text-align: center;
+    span {
+      color: red;
+    }
+  }
+  &.blue {
+    bottom: 1em;
+    span {
+      color: blue;
+    }
+  }
+  &.green {
+    top: 1em;
+    span {
+      color: green;
+    }
+  }
+  &.green, &.blue {
+    width: 100%;
+    text-align: center;
+  }
+  &.save {
+    left: 1em;
+    text-align: center;
+    top: 50%;
+    margin-top: -3.5em;
+    span.saved {
+      display: none;
+    }
+  }
+}
+.color-values {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -4em;
+  margin-left: -5em;
+}

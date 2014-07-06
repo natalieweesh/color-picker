@@ -1,0 +1,82 @@
+/* line 1, styles.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'verdana', sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 8px #fff;
+}
+
+/* line 10, styles.scss */
+#canvas {
+  height: 255%;
+  width: 100%;
+  background: #fff;
+}
+/* line 16, styles.scss */
+#canvas.saved .tooltip.save span {
+  display: none;
+}
+/* line 18, styles.scss */
+#canvas.saved .tooltip.save span.saved {
+  display: inline-block;
+}
+
+/* line 25, styles.scss */
+.tooltip {
+  position: fixed;
+}
+/* line 27, styles.scss */
+.tooltip.red {
+  right: 1em;
+  top: 50%;
+  margin-top: -4em;
+  text-align: center;
+}
+/* line 32, styles.scss */
+.tooltip.red span {
+  color: red;
+}
+/* line 36, styles.scss */
+.tooltip.blue {
+  bottom: 1em;
+}
+/* line 38, styles.scss */
+.tooltip.blue span {
+  color: blue;
+}
+/* line 42, styles.scss */
+.tooltip.green {
+  top: 1em;
+}
+/* line 44, styles.scss */
+.tooltip.green span {
+  color: green;
+}
+/* line 48, styles.scss */
+.tooltip.green, .tooltip.blue {
+  width: 100%;
+  text-align: center;
+}
+/* line 52, styles.scss */
+.tooltip.save {
+  left: 1em;
+  text-align: center;
+  top: 50%;
+  margin-top: -3.5em;
+}
+/* line 57, styles.scss */
+.tooltip.save span.saved {
+  display: none;
+}
+
+/* line 62, styles.scss */
+.color-values {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -4em;
+  margin-left: -5em;
+}
